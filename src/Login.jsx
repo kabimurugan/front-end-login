@@ -10,7 +10,7 @@ const Login = () => {
     const navigate = useNavigate()
 
     const click = () => {
-        var loginDetails = axios.post('http://localhost:3000', { "name": name, "password": password })
+        var loginDetails = axios.post('https://backend-login-u3tq.onrender.com/', { "name": name, "password": password })
 
         loginDetails.then((data) => {
             if (data.data == true) {
